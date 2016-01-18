@@ -1,6 +1,6 @@
 var ghPages = require('gh-pages');
 var path = require('path');
-ghPages.publish(path.join(process.cwd(), '_site'), {
+ghPages.publish(path.join(process.cwd(), 'site'), {
   depth: 1,
   logger: function (message) {
     console.log(message);

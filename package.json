@@ -5,7 +5,7 @@
   "scripts": {
     "build": "./node_modules/.bin/gitbook build ./docs ./site",
     "server": "./node_modules/.bin/gitbook serve ./docs",
-    "deploy": "node scripts/deploy.js"
+    "deploy": "./node_modules/.bin/gitbook build ./docs ./site && node scripts/deploy.js"
   },
   "repository": {
     "type": "git",
