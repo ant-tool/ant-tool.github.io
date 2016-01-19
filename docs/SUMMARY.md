@@ -2,7 +2,7 @@
 
 * [Ant-Tool简介](README.md)
 * [环境准备](SETUP.md)
-* [快速上手](QUICK.md)
+* [快速上手](QUICK-START.md)
 * [构建服务](BUILD.md)
   * [atool-build 基本使用](ATOOL-BUILD.md)
   * [webpack.config.js 配置举例](WEBPACK-CONFIG.md)

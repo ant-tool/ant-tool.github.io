@@ -23,6 +23,7 @@
   "homepage": "https://github.com/ant-tool/ant-tool.github.io#readme",
   "devDependencies": {
     "gh-pages": "^0.8.0",
-    "gitbook-cli": "^1.0.1"
+    "gitbook-plugin-local-video": "^1.0.0",
+    "gitbook-plugin-toc": "0.0.1"
   }
 }
