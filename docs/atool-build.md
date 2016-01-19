@@ -1,5 +1,7 @@
 # atool-build 基本使用
 
+<!-- toc -->
+
 ## 使用 `antd-init` 初始化的项目
 
 对于使用 `antd-init` 初始化的项目，直接运行 `tnpm run build` 即可。

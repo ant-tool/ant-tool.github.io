@@ -1,5 +1,7 @@
 # 环境准备
 
+<!-- toc -->
+
 ## 安装 nodejs
 
 使用 ant-tool 前，请确保系统下载并安装有 [nodejs](http://nodejs.org)。这是仅需的一切，就是如此简单。
