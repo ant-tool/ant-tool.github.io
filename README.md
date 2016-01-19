@@ -14,13 +14,19 @@
 	npm i
 	```
 
-3. developing local
+3. download gitbook plugins
+  
+  ```bash
+  ./node_modules/.bin/gitbook install
+  ```
+
+4. developing local
 
 	```bash
 	npm run dev
 	```
 
-4. deploy github master
+5. deploy github master
 
 	```bash
 	npm run deploy
