@@ -4,7 +4,7 @@
   "description": "ant-tool 使用文档",
   "scripts": {
     "build": "./node_modules/.bin/gitbook build ./docs ./site",
-    "server": "./node_modules/.bin/gitbook serve ./docs",
+    "dev": "./node_modules/.bin/gitbook serve ./docs",
     "deploy": "./node_modules/.bin/gitbook build ./docs ./site && node scripts/deploy.js"
   },
   "repository": {

@@ -1,18 +1,19 @@
-### for user
+### For user
 
-> visit https://ant-tool.github.io
+> visit https://ant-tool.github.io/
 
 
-### for developer
+### For developer
 
-> download dependcies
+> download dependencies
 
 `npm i`
 
 > developing local
 
-`npm run server`
+`npm run dev`
 
-> deploy github gh-pages
+> deploy github master
 
 `npm run deploy`
+
