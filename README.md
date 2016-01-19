@@ -1,19 +1,25 @@
 ### For user
 
-> visit https://ant-tool.github.io/
+* visit https://ant-tool.github.io/
 
 
 ### For developer
 
-> download dependencies
+**first of all**
 
-`npm i`
+`confirm you are developing in develop branch`
 
-> developing local
+**then**
 
-`npm run dev`
+* download dependencies
 
-> deploy github master
+> `npm i`
 
-`npm run deploy`
+* developing local
+
+> `npm run dev`
+
+* deploy github master
+
+> `npm run deploy`
 
