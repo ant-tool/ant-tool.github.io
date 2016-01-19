@@ -33,7 +33,7 @@ $ npm run build
 * `--no-compress` 不压缩代码。
 * `--config [userConfigFile]` 指定用户配置文件。默认为根目录下的 webpack.config.js 文件。这个配置文件不是必须的。
 
-atool-build 是对 webpack 的进一步封装，它会为你生成配置文件并调用 webpack 进行构建。atool-build 默认使用的配置文件，包含了大部分常用的 webpack 的 loader 和插件；当这些功能不能满足你的项目需求，或你需要自定义化配置时，可以添加这个自定义配置文件。但请注意，这个文件的内容和标准的 webpack 的配置文件不一样。关于 atool-build 已经包含了哪些 loader 和插件，以及自定义配置文件的示例，请参考下一节[webpack.config.js 配置举例](./WEBPACK-CONFIG.html)。
+atool-build 是对 webpack 的进一步封装，它会为你生成配置文件并调用 webpack 进行构建。atool-build 默认使用的配置文件，包含了大部分常用的 webpack 的 loader 和插件；当这些功能不能满足你的项目需求，或你需要自定义化配置时，可以添加这个自定义配置文件。但请注意，这个文件的内容和标准的 webpack 的配置文件不一样。关于 atool-build 已经包含了哪些 loader 和插件，以及自定义配置文件的示例，请参考下一节[webpack.config.js 配置举例](./webpack-config.html)。
 
 ### 全局使用
 
