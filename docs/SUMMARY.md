@@ -14,3 +14,6 @@
   * [实现在线调试](online-debug.md)
   * [使用 dora-plugin 扩展 dora](dora-plugin.md)
   * [FAQ-调试](faq-debug.md)
+* [测试服务](test.md)
+  * [atool-test 基本使用](atool-test.md)
+  * [FAQ-测试](faq-test.md)
