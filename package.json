@@ -5,7 +5,8 @@
   "scripts": {
     "build": "./node_modules/.bin/gitbook build ./docs ./site",
     "dev": "./node_modules/.bin/gitbook serve ./docs",
-    "deploy": "./node_modules/.bin/gitbook build ./docs ./site && node scripts/deploy.js"
+    "deploy": "./node_modules/.bin/gitbook build ./docs ./site && node scripts/deploy.js",
+    "gitbook-install":"gitbook install"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "gh-pages": "^0.8.0",
     "gitbook-plugin-local-video": "^1.0.0",
-    "gitbook-plugin-toc": "0.0.1"
+    "gitbook-plugin-toc": "0.0.1",
+    "gitbook-cli": "^1.0.1"
   }
 }

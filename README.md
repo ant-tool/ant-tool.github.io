@@ -17,7 +17,7 @@
 3. download gitbook plugins
   
   ```bash
-  ./node_modules/.bin/gitbook install
+  npm run gitbook-install
   ```
 
 4. developing local
