@@ -1,10 +1,10 @@
-<!-- toc -->
-
 # atool-test 基本使用
 
-atool-test 默认已集成 [mocha](http://mochajs.org/) + [chai](http://chaijs.com/) + [sinon](http://sinonjs.org/), 专注于 web（React | H5） 项目的测试;
+<!-- toc -->
 
 ### 使用
+
+> atool-test 默认已集成 [mocha](http://mochajs.org/) + [chai](http://chaijs.com/) + [sinon](http://sinonjs.org/), 无需添加其他测试相关依赖， 内部使用 atool-build 的 webpack 配置和特性；
 
   1. 在 package.json 中添加依赖及命令: 
 
@@ -17,7 +17,7 @@ atool-test 默认已集成 [mocha](http://mochajs.org/) + [chai](http://chaijs.c
   }
   ```
 
-  2. 建立以 `-test.js` 结尾的测试文件
+  2. 建立测试目录及 `-test.js` 结尾的测试文件
 
 ### 其他浏览器支持
 
