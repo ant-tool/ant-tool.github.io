@@ -40,8 +40,8 @@ atool-test --browsers Chrome,Firefox
 atool-test --assert expectjs
 ```
 
-  * expectjs: `tnpm install karma-sinon-expect --save-dev`
-  * shouldjs: `tnpm install karma-should-sinon karma-should karma-sinon --save-dev`
+  * expectjs: `npm install karma-sinon-expect --save-dev`
+  * shouldjs: `npm install karma-should-sinon karma-should karma-sinon --save-dev`
 
 ### 已有项目如何迁移至 atool-test
 
