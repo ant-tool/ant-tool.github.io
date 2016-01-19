@@ -1,7 +1,5 @@
 # FAQ-构建
 
-<!-- toc -->
-
 #### 1. antd-bin 跟 atool-build 关系
 
 antd-bin 是之前的版本，之后都采用 atool-build。
