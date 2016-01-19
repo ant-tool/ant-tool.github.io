@@ -9,7 +9,7 @@
 * [调试服务](SERVER.md)
   * [dora 基本使用](DORA.md)
   * [实现本地调试](LOCAL-DEBUG.md)
-  * [实现在线调试](LOCAL-ONLINE.md)
+  * [实现在线调试](ONLINE-DEBUG.md)
   * [使用 dora-plugin 扩展 dora](DORA-PLUGIN.md)
 * [FAQ](FAQ.md)
   * [FAQ-构建](FAQ-BUILD.md)
