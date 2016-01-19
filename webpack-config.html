@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>webpack.config.js 配置举例 | Ant-Tool简介</title>
+        <title>webpack.config.js 配置举例 | Ant-Tool 简介</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -44,7 +44,7 @@
     <link rel="next" href="./spm-to-atool-build.html" />
     
     
-    <link rel="prev" href="./atool-build.html" />
+    <link rel="prev" href="./quick-start.html" />
     
 
         
@@ -57,7 +57,7 @@
         data-chapter-title="webpack.config.js 配置举例"
         data-filepath="webpack-config.md"
         data-basepath="."
-        data-revision="Tue Jan 19 2016 15:36:24 GMT+0800 (CST)"
+        data-revision="Tue Jan 19 2016 16:16:01 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -80,7 +80,7 @@
                 
                         <i class="fa fa-check"></i>
                         
-                        Ant-Tool简介
+                        Ant-Tool 简介
                     </a>
             
             
@@ -88,15 +88,7 @@
     
         <li class="chapter " data-level="1" data-path="setup.html">
             
-                
-                    <a href="./setup.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.</b>
-                        
-                        环境准备
-                    </a>
+            <span><b>1.</b> 环境准备</span>
             
             
         </li>
@@ -118,15 +110,7 @@
     
         <li class="chapter " data-level="3" data-path="build.html">
             
-                
-                    <a href="./build.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.</b>
-                        
-                        构建服务
-                    </a>
+            <span><b>3.</b> 构建服务</span>
             
             
             <ul class="articles">
@@ -134,15 +118,7 @@
     
         <li class="chapter " data-level="3.1" data-path="atool-build.html">
             
-                
-                    <a href="./atool-build.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.1.</b>
-                        
-                        atool-build 基本使用
-                    </a>
+            <span><b>3.1.</b> atool-build 基本使用</span>
             
             
         </li>
@@ -179,7 +155,15 @@
     
         <li class="chapter " data-level="3.4" data-path="faq-build.html">
             
-            <span><b>3.4.</b> FAQ-构建</span>
+                
+                    <a href="./faq-build.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        FAQ-构建
+                    </a>
             
             
         </li>
@@ -252,7 +236,15 @@
     
         <li class="chapter " data-level="4.4" data-path="dora-plugin.html">
             
-            <span><b>4.4.</b> 使用 dora-plugin 扩展 dora</span>
+                
+                    <a href="./dora-plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        使用 dora-plugin 扩展 dora
+                    </a>
             
             
         </li>
@@ -292,7 +284,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >Ant-Tool简介</a>
+        <a href="./" >Ant-Tool 简介</a>
     </h1>
 </div>
 
@@ -303,6 +295,90 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="webpackconfigjs-&#x914D;&#x7F6E;&#x4E3E;&#x4F8B;">webpack.config.js &#x914D;&#x7F6E;&#x4E3E;&#x4F8B;</h1>
+<h3 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h3>
+<p>&#x770B;&#x4E86;&#x4E4B;&#x524D;&#x7684;&#x8BF4;&#x660E;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x822C;&#x9879;&#x76EE;&#x6784;&#x5EFA;&#x5DF2;&#x7ECF;&#x591F;&#x7528;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x5173;&#x5FC3; webpack.config.js &#x7684;&#x914D;&#x7F6E;&#x4E86;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x6709;&#x81EA;&#x5B9A;&#x4E49;&#x9700;&#x6C42;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x8981;&#x662F;&#x5E0C;&#x671B;&#x8FDB;&#x4E00;&#x6B65;&#x505A;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#xFF0C;&#x90A3;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#x5462;&#xFF1F;&#x5148;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x6D41;&#x7A0B;&#xFF1A;</p>
+<ol>
+<li>&#x8FD0;&#x884C;&#x547D;&#x4EE4; $ atool-build ;</li>
+<li>&#x68C0;&#x6D4B;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x5939;&#x662F;&#x5426;&#x6709; webpack.config.js &#x6587;&#x4EF6;;</li>
+<li>&#x8981;&#x662F;&#x6CA1;&#x6709;&#x5219;&#x91C7;&#x7528; atool-build &#x5185;&#x7F6E;&#x7684;webpack &#x914D;&#x7F6E;&#xFF0C;&#x8981;&#x662F;&#x6709;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x5C06;&#x5185;&#x7F6E;&#x7684; webpack &#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x4F20;&#x5165;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x5B9E;&#x9645;&#x7684; webpack &#x5BF9;&#x8C61;&#x3002;</li>
+</ol>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; webpack.config.js &#x5C06; atool-build &#x5185;&#x7F6E;&#x7684; webpack &#x914D;&#x7F6E;&#x8FDB;&#x4E00;&#x6B65;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF08;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B; loader&#xFF0C;plugin &#x7B49;&#xFF09;&#xFF0C;&#x5F97;&#x5230;&#x9879;&#x76EE;&#x5B9E;&#x9645;&#x9700;&#x8981;&#x7684;&#x6548;&#x679C;&#x3002;webpack.config.js &#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4F1A;&#x5C06;&#x5185;&#x7F6E;&#x7684; webpack &#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4F1A;&#x4F5C;&#x4E3A;&#x65B0;&#x7684; webpack &#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x6539;&#x53D8;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x4E2A;&#x6027;&#x5316;&#x914D;&#x7F6E;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; DefinePlugin &#x6765;&#x5904;&#x7406;&#x9879;&#x76EE;&#x91CC;&#x9762;&#x7684;&#x9884;&#x7559;&#x503C;&#xFF1A;</p>
+<p>webpack.config.js</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5F97;&#x5230; webpack</span>
+<span class="hljs-keyword">var</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;atool-build/lib/webpack&apos;</span>);
+
+<span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">webpackConfig</span>) </span>{
+  <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;plugin</span>
+  webpackConfig.plugins.push(
+    <span class="hljs-keyword">new</span> webpack.DefinePlugin({
+      __DEV__: <span class="hljs-built_in">JSON</span>.stringify(<span class="hljs-string">&apos;true&apos;</span>)
+    });
+  );
+  <span class="hljs-comment">// &#x8FD4;&#x56DE; webpack &#x914D;&#x7F6E;&#x5BF9;&#x8C61;</span>
+  <span class="hljs-keyword">return</span> webpackConfig;
+};
+</code></pre>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x3002;</p>
+<h3 id="&#x5185;&#x7F6E;&#x5BF9;&#x8C61;">&#x5185;&#x7F6E;&#x5BF9;&#x8C61;</h3>
+<p>atool-build &#x5185;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A; webpack &#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#xFF0C;&#x6765;&#x6EE1;&#x8DB3;&#x4E00;&#x822C;&#x9879;&#x76EE;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x4E3A;&#xFF1A;</p>
+<h4 id="entry">entry</h4>
+<p>package.json &#x4E2D; entry &#x5BF9;&#x5E94;&#x5185;&#x5BB9;</p>
+<h4 id="output">output</h4>
+<p>&#x9ED8;&#x8BA4;&#x4E3A; dist &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6BCF;&#x4E2A; entry key &#x5BF9;&#x5E94; key.js, common.js, key.css, common.css(&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x5219;&#x6CA1;&#x6709; css &#x6587;&#x4EF6;)&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-javascript">{
+  <span class="hljs-string">&quot;entry&quot;</span>:{
+    <span class="hljs-string">&quot;index&quot;</span>:<span class="hljs-string">&quot;./src/index.js&quot;</span>
+  }
+}
+</code></pre>
+<p>./dist&#xFF1A;index.js, common.js, index.css, common.css</p>
+<h4 id="devtool">devtool</h4>
+<p>&#x901A;&#x8FC7; atool-build --devtool devtool &#x5F97;&#x5230;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; undefined</p>
+<h4 id="resolve">resolve</h4>
+<pre><code class="lang-javascript">{
+  modulesDirectories: [<span class="hljs-string">&apos;node_modules&apos;</span>, path.join(__dirname, <span class="hljs-string">&apos;../node_modules&apos;</span>)],
+  extensions: [<span class="hljs-string">&apos;&apos;</span>, <span class="hljs-string">&apos;.js&apos;</span>, <span class="hljs-string">&apos;.jsx&apos;</span>],
+}
+</code></pre>
+<h4 id="resolveloader">resolveLoader</h4>
+<pre><code class="lang-javascript">{
+  modulesDirectories: [<span class="hljs-string">&apos;node_modules&apos;</span>, path.join(__dirname, <span class="hljs-string">&apos;../node_modules&apos;</span>)],
+}
+</code></pre>
+<h4 id="node">node</h4>
+<p>&#x5982;&#x679C;&#x5728; package.json &#x4E2D; browser &#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#xFF0C;&#x5219;&#x8BBE;&#x7F6E; child_process, cluster, dgram, dns, fs, module, net, readline, repl, tls &#x4E3A; empty</p>
+<h4 id="loader">loader</h4>
+<ul>
+<li><p>babel
+&#x5904;&#x7406; .js&#xFF0C;.jsx &#x6587;&#x4EF6;</p>
+<pre><code class="lang-javascript">{
+  presets: [<span class="hljs-string">&apos;es2015&apos;</span>, <span class="hljs-string">&apos;react&apos;</span>, <span class="hljs-string">&apos;stage-0&apos;</span>],
+  plugins: [<span class="hljs-string">&apos;add-module-exports&apos;</span>, <span class="hljs-string">&apos;typecheck&apos;</span>],
+}
+</code></pre>
+</li>
+<li>css&#xFF1A;&#x5904;&#x7406; .css &#x6587;&#x4EF6;</li>
+<li>autoprefixer&#xFF1A;&#x7ED9; css &#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x6D4F;&#x89C8;&#x5668;&#x524D;&#x7F00;</li>
+<li>less&#xFF1A;&#x5904;&#x7406; .less &#x6587;&#x4EF6;&#xFF0C;&#x652F;&#x6301; less</li>
+<li>url&#xFF1A;&#x5904;&#x7406; .woff, .woff2, .ttf, .svg, png, jpg, jpeg, gif &#x6587;&#x4EF6;</li>
+<li>file&#xFF1A;&#x5904;&#x7406; .eot &#x6587;&#x4EF6;</li>
+<li>json&#xFF1A;&#x5904;&#x7406; .json &#x6587;&#x4EF6;</li>
+</ul>
+<h4 id="plugins">plugins</h4>
+<ul>
+<li>webpack.optimize.CommonsChunkPlugin</li>
+<li>extract-text-webpack-plugin</li>
+<li>webpack.optimize.OccurenceOrderPlugin</li>
+</ul>
+<p>&#x66F4;&#x591A;&#x5185;&#x5BB9;&#x53EF;&#x89C1; <a href="https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js" target="_blank">getWebpackCommonConfig</a></p>
+<h3 id="&#x6CE8;&#x610F;&#x70B9;">&#x6CE8;&#x610F;&#x70B9;</h3>
+<ul>
+<li><p>&#x5BF9;&#x4E8E;&#x81EA;&#x5B9A;&#x4E49;&#x6DFB;&#x52A0;&#x7684; loader&#xFF0C;plugin&#x7B49;&#x4F9D;&#x8D56;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#x4E2D;npm install &#x8FD9;&#x4E9B;&#x4F9D;&#x8D56;&#x3002;&#x4F46;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x5B89;&#x88C5; webpack &#x4F9D;&#x8D56;&#xFF0C;&#x56E0;&#x4E3A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; require(&apos;atool-build/lib/webpack&apos;) &#x5F97;&#x5230;&#xFF1B;</p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; atool-build --config file &#x6765;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; webpack.config.js&#xFF0C;&#x8981;&#x662F;&#x627E;&#x4E0D;&#x5230;&#x5219;&#x4F7F;&#x7528;&#x5185;&#x7F6E;&#x7684; webpack &#x914D;&#x7F6E;&#x3002;</p>
+</li>
+</ul>
 
                     
                     </section>
@@ -313,7 +389,7 @@
         </div>
 
         
-        <a href="./atool-build.html" class="navigation navigation-prev " aria-label="Previous page: atool-build 基本使用"><i class="fa fa-angle-left"></i></a>
+        <a href="./quick-start.html" class="navigation navigation-prev " aria-label="Previous page: 快速上手"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="./spm-to-atool-build.html" class="navigation navigation-next " aria-label="Next page: spm to atool-build"><i class="fa fa-angle-right"></i></a>
@@ -346,7 +422,7 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"toc":{"addClass":true,"className":"toc"},"local-video":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"all":["facebook","google","instapaper","twitter","weibo"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"}};
+    var config = {"toc":{"addClass":true,"className":"toc"},"local-video":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>
