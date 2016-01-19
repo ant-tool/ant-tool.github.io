@@ -2,31 +2,30 @@
 
 <!-- toc -->
 
-## 使用 `antd-init` 初始化的项目
+## 安装 atool-build
 
-对于使用 `antd-init` 初始化的项目，直接运行 `tnpm run build` 即可。
+````bash
+$ npm install -g atool-build
+````
 
-## 其它项目
+## 配置 package.json
 
-* 首先，在项目的 `package.json` 里面添加 atool-build 的相关配置：
+atool-build 要求 package.json 文件里面增加 `entry` 字段。
 
 ````json
-"scripts": {
-	"build": "atool-build -o ./dist"
-},
-"dependencies": {
-	"atool-build": "~0.4.3"
-},
 "entry": {
-	"index": "./src/pathToYourEntry.jsx"
+	"index": "./src/pathToYourEntry.jsx",
+	"another": "./src/anotherEntry.jsx"
 }
 ````
 
-* 然后在项目根目录执行：
+## 执行构建
 
 ````bash
-$ npm run build
+$ atool-build
 ````
+
+执行完成后，会在项目根目录的 `dist` 目录里生成 `index.js`, `antoher.js`, `index.css`, `another.css` 以及 `common.js` 和 `common.css` 文件。其中，`common.js` 和 `common.css` 文件是多个入口 entry 公用的模块；其它文件是由 entry 的名称决定的最终打包文件。
 
 
 ## 参数
@@ -39,14 +38,4 @@ $ npm run build
 * `--hash` 使用 hash 模式的构建, 并生成映射表 map.json。
 
 atool-build 是对 webpack 的进一步封装，它会为你生成配置文件并调用 webpack 进行构建。atool-build 默认使用的配置文件，包含了大部分常用的 webpack 的 loader 和插件；当这些功能不能满足你的项目需求，或你需要自定义化配置时，可以添加这个自定义配置文件。但请注意，这个文件的内容和标准的 webpack 的配置文件不一样。关于 atool-build 已经包含了哪些 loader 和插件，以及自定义配置文件的示例，请参考下一节[webpack.config.js 配置举例](./webpack-config.html)。
-
-### 全局使用
-
-你也可以选择全局安装 atool-build。
-
-````bash
-$ npm install -g atool-build
-````
-
-在你需要构建的项目根目录下，执行 `atool-build` 即可。但请注意，需要将 entry 配置在 package.json 或自定义 webpack.config.js 里面。
 
