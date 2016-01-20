@@ -3,17 +3,13 @@
 * [Ant-Tool 简介](README.md)
 * [环境准备](setup.md)
 * [快速上手](quick-start.md)
-* [构建服务](build.md)
+* 构建服务
   * [atool-build 基本使用](atool-build.md)
   * [webpack.config.js 配置举例](webpack-config.md)
   * [spm to atool-build](spm-to-atool-build.md)
-  * [FAQ-构建](faq-build.md)
-* [调试服务](debug.md)
-  * [dora 基本使用](dora.md)
-  * [实现本地调试](local-debug.md)
-  * [实现在线调试](online-debug.md)
-  * [使用 dora-plugin 扩展 dora](dora-plugin.md)
-  * [FAQ-调试](faq-debug.md)
-* [测试服务](test.md)
+* 调试服务
+  * [dora 详解](dora.md)
+  * [在线调试](online-debug.md)
+* 测试服务
   * [atool-test 基本使用](atool-test.md)
-  * [FAQ-测试](faq-test.md)
+* [FAQ](faq.md)
