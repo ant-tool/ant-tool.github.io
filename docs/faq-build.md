@@ -6,7 +6,7 @@ antd-bin 是之前的版本，之后都采用 atool-build。
 
 #### 2. 构建时报错
 
-- 可能是之前安装了 antd-bin，请从依赖中删掉 and-bin ，再删除 node_modules 后重新执行 npm install；
+- 可能是之前安装了 antd-bin，请从依赖中删掉 antd-bin ，再删除 node_modules 后重新执行 npm install；
  
 - babel5 , babel6 不兼容，请全部采用 atool-build。
 
