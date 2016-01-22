@@ -26,6 +26,14 @@ var webpack = require('atool-build/lib/webpack');
 
 相关 issue：[atool-build#32](https://github.com/ant-tool/atool-build/issues/32)
 
+> 问：如何在生成目录里加入 name 和 version ?
+
+修改 package.json 中的 build script：
+
+```
+"build": "atool-build -o ./dist/${npm_package_name}/${npm_package_version}/"
+```
+
 ## 调试
 
 暂无
