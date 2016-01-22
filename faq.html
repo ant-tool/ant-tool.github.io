@@ -55,7 +55,7 @@
         data-chapter-title="FAQ"
         data-filepath="faq.md"
         data-basepath="."
-        data-revision="Fri Jan 22 2016 11:06:08 GMT+0800 (CST)"
+        data-revision="Fri Jan 22 2016 16:45:02 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -324,8 +324,12 @@
 <p>&#x4FEE;&#x6539; package.json &#x4E2D;&#x7684; build script&#xFF1A;</p>
 <pre><code>&quot;build&quot;: &quot;atool-build -o ./dist/${npm_package_name}/${npm_package_version}/&quot;
 </code></pre><h2 id="&#x8C03;&#x8BD5;">&#x8C03;&#x8BD5;</h2>
-<p>&#x6682;&#x65E0;</p>
-<h2 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h2>
+<blockquote>
+<p>&#x95EE;&#xFF1A;&#x600E;&#x4E48;&#x65B9;&#x4FBF;&#x7684;&#x4EE3;&#x7406;&#xFF0C;&#x4ECE; <a href="http://assetsServer/foo/1.0.0/index.js" target="_blank">http://assetsServer/foo/1.0.0/index.js</a> &#x5230; <a href="http://localhost:8989/index.js" target="_blank">http://localhost:8989/index.js</a> </p>
+</blockquote>
+<p>&#x914D; atool-build &#x7684; publicPath &#x53C2;&#x6570;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code>dora --plugins atool-build?publicPath=/${npm_package_name}/${npm_package_version}/
+</code></pre><h2 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h2>
 <p>&#x6682;&#x65E0;</p>
 
                     
