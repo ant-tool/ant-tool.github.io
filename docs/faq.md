@@ -36,7 +36,13 @@ var webpack = require('atool-build/lib/webpack');
 
 ## 调试
 
-暂无
+> 问：怎么方便的代理，从 http://assetsServer/foo/1.0.0/index.js 到 http://localhost:8989/index.js 
+
+配 atool-build 的 publicPath 参数，比如：
+
+```
+dora --plugins atool-build?publicPath=/${npm_package_name}/${npm_package_version}/
+```
 
 ## 测试
 
