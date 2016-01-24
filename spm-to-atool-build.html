@@ -57,7 +57,7 @@
         data-chapter-title="spm to atool-build"
         data-filepath="spm-to-atool-build.md"
         data-basepath="."
-        data-revision="Sun Jan 24 2016 14:07:00 GMT+0800 (CST)"
+        data-revision="Sun Jan 24 2016 14:16:46 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -294,6 +294,26 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="spm-to-atoolbuild">spm to atool-build</h1>
+<!-- toc -->
+<ul>
+<li><a href="#spmoutput">spm.output</a></li>
+<li><a href="#spmglobal">spm.global</a></li>
+<li><a href="#spmnode">spm.node</a></li>
+<li><a href="#spmvendor">spm.vendor</a></li>
+<li><a href="#spmcommon">spm.common</a></li>
+<li><a href="#spmbase64">spm.base64</a></li>
+<li><a href="#spmbabel">spm.babel</a></li>
+<li><a href="#spmuglify">spm.uglify</a></li>
+<li><a href="#spmautoprefixer">spm.autoprefixer</a></li>
+<li><a href="#spmdest">spm.dest</a></li>
+<li><a href="#spmhash">spm.hash</a></li>
+<li><a href="#spmextractcss">spm.extractCSS</a></li>
+<li><a href="#spmlibrary-&#x76F8;&#x5173;">spm.library &#x76F8;&#x5173;</a></li>
+<li><a href="#spmloader">spm.loader</a></li>
+<li><a href="#spmdefine">spm.define</a></li>
+</ul>
+<!-- toc stop -->
+<h2 id="spmoutput">spm.output</h2>
 <blockquote>
 <p>spm.output</p>
 </blockquote>
@@ -325,7 +345,7 @@
 <p><strong>&#x6CE8;&#x610F;</strong></p>
 <p>&#x5728; <code>atool</code> &#x4E2D; <code>entry</code> &#x9ED8;&#x8BA4;&#x53EA;&#x652F;&#x6301; <code>js</code>. &#x540C;&#x65F6; <code>entry</code> &#x4E2D;&#x7684; <code>key</code> &#x5BF9;&#x5E94;&#x6700;&#x7EC8;&#x6253;&#x5305;&#x51FA;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x4F1A;&#x542B;&#x6709; <code>key.js</code> , <code>common.js</code> , <code>key.css</code>, <code>common.css</code> (&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x5219;&#x6CA1;&#x6709; <code>css</code> &#x6587;&#x4EF6;)</p>
 <p>&#x6240;&#x4EE5;&#x5982;&#x4E0A; <code>entry</code> &#x6700;&#x7EC8;&#x53EF;&#x80FD;&#x6253;&#x5305;&#x51FA;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x662F;  <code>index.js</code> , <code>indexb.js</code> <code>common.js</code> , <code>index.css</code> , <code>indexb.css</code> , <code>common.css</code> </p>
-<h4 id="faq">FAQ</h4>
+<p><strong>&#x6848;&#x4F8B;</strong></p>
 <ul>
 <li><p>&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x901A;&#x914D;&#x7B26;  <code>&quot;./src/afwealth/*.js&quot;</code> &#xFF1F;</p>
 <p>&#x9996;&#x5148;&#x4F60;&#x9700;&#x8981;&#x4E86;&#x89E3;&#x4E0B; <a href="http://ant-tool.github.io/webpack-config.html" target="_blank">webpack.config.js</a></p>
@@ -367,6 +387,7 @@
 </li>
 </ul>
 <hr>
+<h2 id="spmglobal">spm.global</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#global" target="_blank">spm.global</a></p>
 </blockquote>
@@ -381,6 +402,7 @@
 </code></pre>
 <p>&#x5173;&#x4E8E;&#x66F4;&#x591A; <code>externals</code> &#x8BF7;&#x67E5;&#x770B; <a href="http://webpack.github.io/docs/configuration.html#externals" target="_blank">webpack#externals</a></p>
 <hr>
+<h2 id="spmnode">spm.node</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#node" target="_blank">spm.node</a></p>
 </blockquote>
@@ -411,6 +433,7 @@
 <p>&#x5173;&#x4E8E;&#x66F4;&#x591A; <code>node</code> &#x8BF7;&#x67E5;&#x770B; <a href="http://webpack.github.io/docs/configuration.html#node" target="_blank">webpack#externals</a></p>
 <p>&#x53E6;&#x5916;&#x53C2;&#x8003;&#x4EE3;&#x7801;&#x6709; <a href="https://github.com/webpack/node-libs-browser/blob/master/index.js" target="_blank">Profill</a></p>
 <hr>
+<h2 id="spmvendor">spm.vendor</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#vendor" target="_blank">spm.vendor</a></p>
 </blockquote>
@@ -465,6 +488,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;path/to/pageA.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </span></code></pre>
 <hr>
+<h2 id="spmcommon">spm.common</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#vendor" target="_blank">spm.common</a></p>
 </blockquote>
@@ -518,6 +542,7 @@
 </li>
 </ul>
 <hr>
+<h2 id="spmbase64">spm.base64</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#base64" target="_blank">spm.base64</a></p>
 </blockquote>
@@ -564,6 +589,7 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 </li>
 </ul>
 <hr>
+<h2 id="spmbabel">spm.babel</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#babel" target="_blank">spm.babel</a></p>
 </blockquote>
@@ -588,6 +614,7 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 });
 </code></pre>
 <hr>
+<h2 id="spmuglify">spm.uglify</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#uglify" target="_blank">spm.uglify</a></p>
 </blockquote>
@@ -605,6 +632,7 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 <p>&#x5728;&#x4F7F;&#x7528; <code>atool-build</code> &#x65F6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6DFB;&#x52A0; <code>--no-compress</code> &#x7684;&#x65B9;&#x5F0F;&#x5BF9;&#x6E90;&#x7801;&#x4E0D;&#x8FDB;&#x884C;&#x538B;&#x7F29;&#x3002;
 <code>/to/your/atool-build --no-compress</code></p>
 <hr>
+<h2 id="spmautoprefixer">spm.autoprefixer</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#autoprefixer" target="_blank">spm.autoprefixer</a></p>
 </blockquote>
@@ -631,6 +659,7 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 </li>
 </ul>
 <hr>
+<h2 id="spmdest">spm.dest</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#dest" target="_blank">spm.dest</a></p>
 </blockquote>
@@ -653,6 +682,7 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 </code></pre>
 <p>&#x66F4;&#x591A; <a href="http://webpack.github.io/docs/configuration.html#output" target="_blank">output &#x53C2;&#x6570;</a></p>
 <hr>
+<h2 id="spmhash">spm.hash</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#hash" target="_blank">spm.hash</a></p>
 </blockquote>
@@ -669,12 +699,14 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 }
 </code></pre>
 <hr>
+<h2 id="spmextractcss">spm.extractCSS</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#extractCSS" target="_blank">spm.extractCSS</a></p>
 </blockquote>
 <p>&#x5728; <code>webpack</code> &#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x662F;&#x63D2;&#x4EF6; <a href="https://github.com/webpack/extract-text-webpack-plugin" target="_blank"><code>ExtractTextPlugin</code></a> <code>atool-build</code> &#x4E2D;&#x6211;&#x4EEC;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x4E86;&#x5185;&#x7F6E;&#xFF0C;&#x6784;&#x5EFA;&#x5DE5;&#x5177;&#x4E3B;&#x52A8;&#x4F1A;&#x5BF9; <a href="https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js#L74" target="_blank"><code>css</code></a> &#x548C; <a href="https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js#L81" target="_blank"><code>less</code></a> &#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x4F1A;&#x62BD;&#x53D6;&#x6210;&#x72EC;&#x7ACB;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
 <p>&#x5982;&#x679C;&#x6709;&#x4E9B;&#x7EC4;&#x4EF6;&#x9700;&#x8981;&#x5185;&#x7F6E;&#x6837;&#x5F0F;&#xFF0C;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x8BE5;&#x529F;&#x80FD;&#x3002;&#x90A3;&#x4E48;&#x628A;&#x5982;&#x4E0A; <a href="https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js#L74" target="_blank"><code>css</code></a> &#x548C; <a href="https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js#L81" target="_blank"><code>less</code></a> &#x7684; <code>loader</code> &#x8FDB;&#x884C;&#x66FF;&#x6362;&#x3002;&#x8FD9;&#x8FB9;&#x5C31;&#x4E0D;&#x5728;&#x9610;&#x8FF0;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5982;&#x4E0A;&#x6848;&#x4F8B;&#x3002;</p>
 <hr>
+<h2 id="spmlibrary-&#x76F8;&#x5173;">spm.library &#x76F8;&#x5173;</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#library" target="_blank">spm.library</a>
 <a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#libraryTarget" target="_blank">spm.libraryTarget</a>
@@ -701,6 +733,7 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 };
 </code></pre>
 <hr>
+<h2 id="spmloader">spm.loader</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#loader" target="_blank">spm.loader</a></p>
 </blockquote>
@@ -724,6 +757,7 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 </li>
 </ol>
 <hr>
+<h2 id="spmdefine">spm.define</h2>
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#define" target="_blank">spm.define</a></p>
 </blockquote>
