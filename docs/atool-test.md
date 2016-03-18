@@ -18,19 +18,22 @@
   ```
 
   2. 建立测试目录及 `-test.js` 结尾的测试文件
+  
+### 参数
+  
+  - `-p, --port`: 端口, 默认为 9876;
+  - `-a, --assert`: 自定义断言库
+  - `-k, --keep`: 测试结束后保持进程, 方便在其他浏览器中打开 runner.html
 
-### 其他浏览器支持
+### 其他浏览器测试
 
-  默认集成 `PhantomJS`
+  默认在 `PhantomJS` 中执行测试;
 
 ```
-atool-test --browsers Chrome,Firefox
+atool-test --keep
 ```
 
-  * Chrome: `npm install karma-chrome-launcher --save-dev`
-  * Firefox: `npm install karma-firefox-launcher --save-dev`
-  * IE: `npm install karma-ie-launcher --save-dev`
-  * Safari: `npm install karma-safari-launcher --save-dev`
+在浏览器中打开 http://127.0.0.1:9876/tests/runner.html
 
 ### 其他断言库支持
 
@@ -40,8 +43,8 @@ atool-test --browsers Chrome,Firefox
 atool-test --assert expectjs
 ```
 
-  * expectjs: `npm install karma-sinon-expect --save-dev`
-  * shouldjs: `npm install karma-should-sinon karma-should karma-sinon --save-dev`
+  * expectjs: `npm install expect.js --save-dev`
+  * shouldjs: `npm install should --save-dev`
 
 ### 已有项目如何迁移至 atool-test
 
