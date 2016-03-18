@@ -57,7 +57,7 @@
         data-chapter-title="atool-test 基本使用"
         data-filepath="atool-test.md"
         data-basepath="."
-        data-revision="Sun Jan 24 2016 14:16:46 GMT+0800 (CST)"
+        data-revision="Fri Mar 18 2016 13:33:09 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -297,7 +297,8 @@
 <!-- toc -->
 <ul>
 <li><a href="#&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</a></li>
-<li><a href="#&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;">&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;</a></li>
+<li><a href="#&#x53C2;&#x6570;">&#x53C2;&#x6570;</a></li>
+<li><a href="#&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x6D4B;&#x8BD5;">&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x6D4B;&#x8BD5;</a></li>
 <li><a href="#&#x5176;&#x4ED6;&#x65AD;&#x8A00;&#x5E93;&#x652F;&#x6301;">&#x5176;&#x4ED6;&#x65AD;&#x8A00;&#x5E93;&#x652F;&#x6301;</a></li>
 <li><a href="#&#x5DF2;&#x6709;&#x9879;&#x76EE;&#x5982;&#x4F55;&#x8FC1;&#x79FB;&#x81F3;-atool-test">&#x5DF2;&#x6709;&#x9879;&#x76EE;&#x5982;&#x4F55;&#x8FC1;&#x79FB;&#x81F3; atool-test</a></li>
 </ul>
@@ -319,21 +320,22 @@
 <li><p>&#x5EFA;&#x7ACB;&#x6D4B;&#x8BD5;&#x76EE;&#x5F55;&#x53CA; <code>-test.js</code> &#x7ED3;&#x5C3E;&#x7684;&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;</p>
 </li>
 </ol>
-<h3 id="&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;">&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;</h3>
-<p>  &#x9ED8;&#x8BA4;&#x96C6;&#x6210; <code>PhantomJS</code></p>
-<pre><code>atool-test --browsers Chrome,Firefox
-</code></pre><ul>
-<li>Chrome: <code>npm install karma-chrome-launcher --save-dev</code></li>
-<li>Firefox: <code>npm install karma-firefox-launcher --save-dev</code></li>
-<li>IE: <code>npm install karma-ie-launcher --save-dev</code></li>
-<li>Safari: <code>npm install karma-safari-launcher --save-dev</code></li>
+<h3 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h3>
+<ul>
+<li><code>-p, --port</code>: &#x7AEF;&#x53E3;, &#x9ED8;&#x8BA4;&#x4E3A; 9876;</li>
+<li><code>-a, --assert</code>: &#x81EA;&#x5B9A;&#x4E49;&#x65AD;&#x8A00;&#x5E93;</li>
+<li><code>-k, --keep</code>: &#x6D4B;&#x8BD5;&#x7ED3;&#x675F;&#x540E;&#x4FDD;&#x6301;&#x8FDB;&#x7A0B;, &#x65B9;&#x4FBF;&#x5728;&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00; runner.html</li>
 </ul>
+<h3 id="&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x6D4B;&#x8BD5;">&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x6D4B;&#x8BD5;</h3>
+<p>  &#x9ED8;&#x8BA4;&#x5728; <code>PhantomJS</code> &#x4E2D;&#x6267;&#x884C;&#x6D4B;&#x8BD5;;</p>
+<pre><code>atool-test --keep
+</code></pre><p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00; <a href="http://127.0.0.1:9876/tests/runner.html" target="_blank">http://127.0.0.1:9876/tests/runner.html</a></p>
 <h3 id="&#x5176;&#x4ED6;&#x65AD;&#x8A00;&#x5E93;&#x652F;&#x6301;">&#x5176;&#x4ED6;&#x65AD;&#x8A00;&#x5E93;&#x652F;&#x6301;</h3>
 <p>  &#x9ED8;&#x8BA4;&#x96C6;&#x6210; <a href="http://chaijs.com/" target="_blank"><code>chaijs</code></a></p>
 <pre><code>atool-test --assert expectjs
 </code></pre><ul>
-<li>expectjs: <code>npm install karma-sinon-expect --save-dev</code></li>
-<li>shouldjs: <code>npm install karma-should-sinon karma-should karma-sinon --save-dev</code></li>
+<li>expectjs: <code>npm install expect.js --save-dev</code></li>
+<li>shouldjs: <code>npm install should --save-dev</code></li>
 </ul>
 <h3 id="&#x5DF2;&#x6709;&#x9879;&#x76EE;&#x5982;&#x4F55;&#x8FC1;&#x79FB;&#x81F3;-atooltest">&#x5DF2;&#x6709;&#x9879;&#x76EE;&#x5982;&#x4F55;&#x8FC1;&#x79FB;&#x81F3; atool-test</h3>
 <ol>
