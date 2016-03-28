@@ -57,7 +57,7 @@
         data-chapter-title="spm to atool-build"
         data-filepath="spm-to-atool-build.md"
         data-basepath="."
-        data-revision="Mon Mar 28 2016 10:50:52 GMT+0800 (CST)"
+        data-revision="Mon Mar 28 2016 16:26:31 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -336,10 +336,10 @@
 <p>&#x6240;&#x4EE5;&#x4E00;&#x4EFD; <code>atool</code> &#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x662F;&#x8FD9;&#x6837;&#x7684;</p>
 <p><code>package.json</code></p>
 <pre><code class="lang-javascript">{
-  <span class="hljs-string">&quot;entry&quot;</span>: [
+  <span class="hljs-string">&quot;entry&quot;</span>: {
     <span class="hljs-string">&quot;index&quot;</span> : <span class="hljs-string">&quot;./src/index.js&quot;</span>,
     <span class="hljs-string">&quot;indexb&quot;</span> : <span class="hljs-string">&quot;./src/indexb.js&quot;</span>
-  ]
+  }
 }
 </code></pre>
 <p><strong>&#x6CE8;&#x610F;</strong></p>
@@ -358,10 +358,10 @@
 <ul>
 <li>&#x5982;&#x679C;&#x8BE5; <code>x.css</code> &#x5DF2;&#x7ECF;&#x88AB;&#x67D0;&#x811A;&#x672C;&#x5982; <code>xx.js</code> &#x4E2D;&#x6709;&#x5F15;&#x7528;&#x5230;&#xFF0C;&#x90A3;&#x4E48;&#x4E0D;&#x5FC5;&#x4E13;&#x95E8;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#x5BFC;&#x51FA;,&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x4E2D;&#x4F1A;&#x751F;&#x6210;&#x4E0E;&#x811A;&#x672C;&#x540C;&#x540D;&#x7684;&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x5373; <code>xx.css</code> &#x8BE5;&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x7684;&#x811A;&#x672C;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#x3002;</li>
 <li>&#x5982;&#x679C;&#x8BE5; <code>x.css</code> &#x4E0D;&#x5F97;&#x4E0D;&#x8FDB;&#x884C;&#x5BFC;&#x51FA;&#xFF0C;&#x53EF;&#x4EE5;&#x6709;&#x7684;&#x65B9;&#x6848;&#x662F;&#xFF0C;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x5982; <code>x.js</code>&#xFF0C;&#x5E76;&#x5728; <code>entry</code> &#x4E2D;&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x7684;&#x8BBE;&#x7F6E;<pre><code class="lang-javascript">{
-  <span class="hljs-string">&quot;entry&quot;</span>: [
+  <span class="hljs-string">&quot;entry&quot;</span>: {
     <span class="hljs-string">&quot;xx&quot;</span> : <span class="hljs-string">&quot;path/to/xx.js&quot;</span>,
     <span class="hljs-string">&quot;x&quot;</span> : [<span class="hljs-string">&quot;path/to/x.js&quot;</span>]
-  ]
+  }
 }
 </code></pre>
 &#x4E3A;&#x4EC0;&#x4E48;&#x662F; <code>[]</code> &#x5462; &#xFF1F;&#x4E0D;&#x8BBE;&#x7F6E; <a href="http://webpack.github.io/docs/configuration.html#entry" target="_blank">Mutiple Entry</a> &#x4F1A;&#x5F97;&#x5230;&#x5982;&#x4E0B;&#x62A5;&#x9519; <code>Module not found: Error: a dependency to an entry point is not allowed</code> </li>
@@ -762,8 +762,7 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#define" target="_blank">spm.define</a></p>
 </blockquote>
 <p>&#x5728; <code>atool-build</code> &#x4E2D; &#x5DF2;&#x7ECF;&#x5185;&#x7F6E;&#x4E86; <a href="https://github.com/ant-tool/atool-build/blob/master/src/build.js#L32" target="_blank"><code>DefinePlugin</code></a></p>
-<p>&#x76EE;&#x524D;&#x6682;&#x65F6;&#x6CA1;&#x6709;&#x65B9;&#x5F0F;&#x80FD;&#x591F;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#xFF0C;&#x4F46;&#x662F;&#x540E;&#x7EED;&#x5E94;&#x8BE5;&#x4F1A;&#x5F00;&#x653E;&#x53C2;&#x6570;&#xFF0C;&#x8FD9;&#x4F1A;&#x5728;&#x4E4B;&#x540E;&#x7684;&#x53D8;&#x66F4;&#x4E2D;&#x4E88;&#x4EE5;&#x66F4;&#x65B0;&#xFF0C;&#x67E5;&#x770B; <a href="https://github.com/ant-tool/atool-build/issues/58" target="_blank">issue &#x4EE5;&#x67E5;&#x770B;&#x6700;&#x65B0;&#x8FDB;&#x5C55;</a></p>
-<p>&#x5982;&#x679C;&#x540E;&#x7EED; <code>DefinePlugin</code> &#x4E00;&#x65E6;&#x5F00;&#x653E;&#x90A3;&#x6211;&#x4EEC;&#x4FBF;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0; <code>spm-webpck</code> &#x4E2D;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6784;&#x5EFA;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x6240;&#x53D8;&#x66F4;&#x3002;</p>
+<p>&#x76F8;&#x5173;&#x8BA8;&#x8BBA; issue <a href="https://github.com/ant-tool/atool-build/issues/58" target="_blank">&#x6700;&#x65B0;&#x8FDB;&#x5C55;</a></p>
 <pre><code class="lang-javascript">
 <span class="hljs-keyword">var</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;atool-build/lib/webpack&apos;</span>);
 
