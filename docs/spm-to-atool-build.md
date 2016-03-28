@@ -33,10 +33,10 @@
 
 ```javascript
 {
-  "entry": [
+  "entry": {
     "index" : "./src/index.js",
     "indexb" : "./src/indexb.js"
-  ]
+  }
 }
 ```
 
@@ -63,10 +63,10 @@
   - 如果该 `x.css` 不得不进行导出，可以有的方案是，新建一个脚本文件，如 `x.js`，并在 `entry` 中进行如下的设置
   ```javascript  
   {
-      "entry": [
+      "entry": {
         "xx" : "path/to/xx.js",
         "x" : ["path/to/x.js"]
-      ]
+      }
   }
   ```
   为什么是 `[]` 呢 ？不设置 [Mutiple Entry](http://webpack.github.io/docs/configuration.html#entry) 会得到如下报错 `Module not found: Error: a dependency to an entry point is not allowed` 
@@ -547,10 +547,8 @@ module.exports = function(webpackConfig) {
 
 在 `atool-build` 中 已经内置了 [`DefinePlugin`](https://github.com/ant-tool/atool-build/blob/master/src/build.js#L32)
 
-目前暂时没有方式能够覆盖这个配置，但是后续应该会开放参数，这会在之后的变更中予以更新，查看 [issue 以查看最新进展](https://github.com/ant-tool/atool-build/issues/58)
+相关讨论 issue [最新进展](https://github.com/ant-tool/atool-build/issues/58)
 
-
-如果后续 `DefinePlugin` 一旦开放那我们便可以实现 `spm-webpck` 中的自定义构建，但是使用方式可能会有所变更。
 
 ```javascript
 
