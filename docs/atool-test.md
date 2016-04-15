@@ -17,12 +17,12 @@
   }
   ```
 
-  2. 建立测试目录及 `-test.js` 结尾的测试文件
+  2. 建立测试目录及 `-test.js` 或 `-spec.js` 结尾的测试文件
   
 ### 参数
   
   - `-p, --port`: 端口, 默认为 9876;
-  - `-a, --assert`: 自定义断言库
+  - `--no-chai`: 不含内置断言库
   - `-k, --keep`: 测试结束后保持进程, 方便在其他浏览器中打开 runner.html
 
 ### 其他浏览器测试
@@ -40,14 +40,18 @@ atool-test --keep
   默认集成 [`chaijs`](http://chaijs.com/)
 
 ```
-atool-test --assert expectjs
+atool-test --no-chai
 ```
 
   * expectjs: `npm install expect.js --save-dev`
   * shouldjs: `npm install should --save-dev`
 
+```
+// test code
+import expect from 'expect.js';
+```
+
 ### 已有项目如何迁移至 atool-test
 
-  1. 修改测试文件名,以 `-test.js` 结尾;
+  1. 修改测试文件名,以 `-test.js` 或 `-spec.js` 结尾;
   2. 根据项目中断言库来选择对应断言库扩展;
-  3. 删除测试用例中 require 的断言库和 sinon.
