@@ -10,7 +10,7 @@
 
   ```json
   "devDependencies": {
-        "atool-test": "*"
+        "atool-test": "~0.4.9"
   },
   "scripts": {
         "test": "atool-test"
@@ -22,8 +22,9 @@
 ### 参数
   
   - `-p, --port`: 端口, 默认为 9876;
-  - `--no-chai`: 不含内置断言库
-  - `-k, --keep`: 测试结束后保持进程, 方便在其他浏览器中打开 runner.html
+  - `--no-chai`: 不含内置断言库;
+  - `--no-coverage`：不生成测试覆盖率;
+  - `-k, --keep`: 测试结束后保持进程, 方便在其他浏览器中打开 runner.html.
 
 ### 其他浏览器测试
 
