@@ -12,4 +12,6 @@
   * [在线调试](online-debug.md)
 * 测试服务
   * [atool-test 基本使用](atool-test.md)
+* 文档服务
+  * [atool-doc 基本使用](atool-doc.md)
 * [FAQ](faq.md)
