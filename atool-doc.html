@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Ant-Tool 简介 | Ant-Tool 简介</title>
+        <title>atool-doc 基本使用 | Ant-Tool 简介</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="ant-tool 是蚂蚁金服新一代构建和调试工具。">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
         
         
@@ -41,8 +41,10 @@
         
     
     
-    <link rel="next" href="./setup.html" />
+    <link rel="next" href="./faq.html" />
     
+    
+    <link rel="prev" href="./atool-test.html" />
     
 
         
@@ -51,9 +53,9 @@
         
         
     <div class="book"
-        data-level="0"
-        data-chapter-title="Ant-Tool 简介"
-        data-filepath="README.md"
+        data-level="6.1"
+        data-chapter-title="atool-doc 基本使用"
+        data-filepath="atool-doc.md"
         data-basepath="."
         data-revision="Wed Apr 27 2016 15:21:27 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -71,7 +73,7 @@
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="./index.html">
@@ -251,7 +253,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1" data-path="atool-doc.html">
+        <li class="chapter active" data-level="6.1" data-path="atool-doc.html">
             
                 
                     <a href="./atool-doc.html">
@@ -319,8 +321,125 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="anttool-&#x7B80;&#x4ECB;">Ant-Tool &#x7B80;&#x4ECB;</h1>
-<p><code>ant-tool</code> &#x662F;&#x8682;&#x8681;&#x91D1;&#x670D;&#x65B0;&#x4E00;&#x4EE3;&#x6784;&#x5EFA;&#x548C;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;&#x3002;</p>
+                        <h1 id="atooldoc-&#x57FA;&#x672C;&#x4F7F;&#x7528;">atool-doc &#x57FA;&#x672C;&#x4F7F;&#x7528;</h1>
+<h2 id="helloworld">hello-world</h2>
+<p>atool-doc &#x662F;&#x9762;&#x76F8;&#x7EC4;&#x4EF6;&#x7684;&#x9759;&#x6001; Demo &#x751F;&#x6210;&#x3001;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x66F4;&#x7075;&#x6D3B;&#x3001;&#x548C;&#x7EC4;&#x4EF6;&#x7ED3;&#x5408;&#x66F4;&#x7D27;&#x5BC6;&#x7684; codePen</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5F00;&#x53D1;&#x4E86;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li>&#x4F60;&#x9700;&#x8981;&#x672C;&#x5730;&#x5199;&#x4E2A; demo &#x628A;&#x7EC4;&#x4EF6;&#x7528;&#x8D77;&#x6765;&#x770B;&#x6548;&#x679C;</li>
+<li>&#x4F60;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4ECB;&#x7ECD;&#x7EC4;&#x4EF6;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5E76;&#x4E14;&#x5E0C;&#x671B;&#x540C;&#x65F6;&#x5C55;&#x793A;&#x4EE3;&#x7801;&#x548C;&#x4EE3;&#x7801;&#x8FD0;&#x884C;&#x6548;&#x679C;</li>
+<li>&#x4F60;&#x9700;&#x8981;&#x628A;&#x4F8B;&#x5B50;&#x6253;&#x5305;&#x6210;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x53D1;&#x9001;&#x7ED9;&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x8005;&#x6216;&#x90E8;&#x7F72;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;</li>
+</ul>
+<p><br></p>
+<p>&#x90A3;&#x4E48;&#x4F60;&#x5C31;&#x9700;&#x8981; atool-doc</p>
+<hr>
+<blockquote>
+<p>atool-doc &#x6253;&#x5305;&#x751F;&#x6210; Demo &#x65F6;&#x505A;&#x4E86;&#x54EA;&#x4E9B;&#x4E8B;&#xFF1F;</p>
+</blockquote>
+<ul>
+<li>&#x5982;&#x56FE;&#xFF0C;&#x5C06;&#x6BCF;&#x4E00;&#x4E2A; example &#x6587;&#x4EF6;&#x90FD;&#x6253;&#x5305;&#x6210;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7684; html&#xFF0C;&#x5E76;&#x901A;&#x8FC7; index.html &#x7BA1;&#x7406;&#x8D77;&#x6765;</li>
+</ul>
+<p><br></p>
+<blockquote>
+<p>&#x6709;&#x6CA1;&#x6709;&#x4F7F;&#x7528; atool-doc &#x751F;&#x6210;&#x7684;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x770B;&#x4E0B;&#xFF1F;</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/ant-tool/atool-doc" target="_blank">atool-doc &#x81EA;&#x8EAB;&#x7684;&#x4ED3;&#x5E93;</a> &#x548C; <a href="https://ant-tool.github.io/atool-doc/" target="_blank">&#x4F7F;&#x7528;&#x672C;&#x6587;&#x65B9;&#x6CD5;&#x751F;&#x6210;&#x7684; Demo &#x6587;&#x4EF6;</a></li>
+</ul>
+<p><br></p>
+<p><strong>before</strong></p>
+<pre><code>./
+&#x251C;&#x2500;&#x2500; README.md
+&#x2514;&#x2500;&#x2500; examples
+    &#x251C;&#x2500;&#x2500; a.js
+    &#x251C;&#x2500;&#x2500; a.html
+    &#x2514;&#x2500;&#x2500; b.md
+</code></pre><p><strong>after</strong></p>
+<pre><code>./
+&#x251C;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; __site
+&#x2502;   &#x251C;&#x2500;&#x2500; common.js
+&#x2502;   &#x251C;&#x2500;&#x2500; examples
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; a.html
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; a.js
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; b.html
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; b.js
+&#x2502;   &#x2514;&#x2500;&#x2500; index.html
+&#x2514;&#x2500;&#x2500; examples
+    &#x251C;&#x2500;&#x2500; a.js
+    &#x251C;&#x2500;&#x2500; a.html
+    &#x2514;&#x2500;&#x2500; b.md
+</code></pre><h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<pre><code class="lang-bash">$ tnpm i atool-doc --save-dev
+</code></pre>
+<h4 id="&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;">&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;</h4>
+<pre><code class="lang-bash">  atool-doc          start server at http://<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>:<span class="hljs-number">8002</span> <span class="hljs-keyword">for</span> demo
+
+  atool-doc [options]
+
+    -h, --help       output usage information
+    -v, --version    output the version number
+    --dest &lt;dir&gt;     config path of output dir, default __site
+    --source &lt;dir&gt;   config path of demo files dir, default examples
+    --tpl &lt;path&gt;     config path or name of tpl file
+    --config &lt;path&gt;  config path of webpack.config, default webpack.config.js
+    --port &lt;number&gt;  specify server port, default <span class="hljs-number">8002</span>
+    --build          only build
+    -w, --watch      using with --build, watch mode
+</code></pre>
+<h2 id="&#x7F16;&#x5199;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;-demo-&#x6587;&#x4EF6;">&#x7F16;&#x5199;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x4E2A; Demo &#x6587;&#x4EF6;</h2>
+<ul>
+<li><p>Demo &#x9ED8;&#x8BA4;&#x5B58;&#x653E;&#x5728; <code>examples</code> &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x65B0;&#x5EFA;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x4E2A; Demo &#x6587;&#x4EF6;</p>
+<pre><code class="lang-bash">$ md examples &amp;&amp; vi examples/basic.md
+</code></pre>
+</li>
+<li><p>&#x5728; <code>## code</code> &#x8282;&#x70B9;&#x5199;&#x4E0B;&#x4F60;&#x9700;&#x8981;&#x751F;&#x6548;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5728;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x7F16;&#x5199;&#x63CF;&#x8FF0;</p>
+<p>&#x6B64;&#x5904;&#x7684; <code>## code</code> &#x662F;&#x4FDD;&#x7559;&#x5B57;&#x6BB5;&#xFF0C;&#x652F;&#x6301; <code>js/jsx/javascript</code>&#x3001;<code>css</code> &#x548C; <code>html</code> &#x4E09;&#x79CD;&#x683C;&#x5F0F;&#x6765; <code>&#x81EA;&#x5B9A;&#x4E49;&#x6837;&#x5F0F;&#x548C;&#x9884;&#x7559;&#x7684; Dom &#x7ED3;&#x6784;</code></p>
+<p>&#x53EF;&#x4EE5;&#x6A21;&#x4EFF;&#x5982;&#x56FE;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x7F16;&#x5199;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x53C2;&#x9605; <a href="https://github.com/ant-tool/atool-doc/blob/master/examples/customDomAndStyle.md" target="_blank">custom.md</a></p>
+<p><img src="https://cloud.githubusercontent.com/assets/5318333/14135283/309ee330-f68f-11e5-8d5f-fdd5a09f7fa9.png" alt="image"></p>
+</li>
+<li><p>&#x6267;&#x884C; <code>atool-doc</code></p>
+<pre><code class="lang-bash">$ node_modules/.bin/atool-doc           <span class="hljs-comment"># &#x542F;&#x52A8;&#x672C;&#x5730; server&#xFF0C;&#x76D1;&#x542C;&#x6587;&#x4EF6;&#x53D8;&#x5316;&#xFF0C;&#x67E5;&#x770B; Demo &#x6548;&#x679C;,  http://127.0.0.1:8002</span>
+$ node_modules/.bin/atool-doc --build   <span class="hljs-comment"># &#x6253;&#x5305; demo &#x5230; __site &#x76EE;&#x5F55;</span>
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p><code>&#x53EF;&#x9009;</code> &#x53EF;&#x5C06; <code>atool-doc</code> &#x547D;&#x4EE4;&#x589E;&#x52A0;&#x5230; <code>package.json</code>&#xFF0C;&#x7B80;&#x5316;&#x64CD;&#x4F5C;</p>
+<pre><code class="lang-json">{
+  ...
+  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;doc-build&quot;</span>: <span class="hljs-string">&quot;atool-doc --build&quot;</span>,
+    <span class="hljs-string">&quot;doc&quot;</span>: <span class="hljs-string">&quot;atool-doc&quot;</span>
+  }
+}
+</code></pre>
+<pre><code class="lang-bash">$ npm run doc
+$ npm run doc-build
+</code></pre>
+</li>
+<li><p>&#x6587;&#x6863;&#x81EA;&#x52A8;&#x90E8;&#x7F72;</p>
+</li>
+</ul>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Github &#x7684; <a href="https://help.github.com/articles/creating-project-pages-manually/" target="_blank">gh-pages</a> &#x529F;&#x80FD;&#x6765;&#x5B9E;&#x73B0;&#x66F4;&#x65B0; github &#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x5BF9;&#x5E94;&#x7684; Demo &#x6587;&#x4EF6;&#x5230;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5728;&#x7EBF;&#x8BBF;&#x95EE;&#xFF01;</p>
+<ul>
+<li><p>&#x5B89;&#x88C5; <code>gh-pages</code></p>
+<pre><code class="lang-bash">$ npm i gh-pages --save-dev
+</code></pre>
+</li>
+<li><p>&#x6DFB;&#x52A0;&#x547D;&#x4EE4;&#x5230; package.json</p>
+<pre><code class="lang-json">{
+  <span class="hljs-string">&quot;scripts&quot;</span>: {
+    <span class="hljs-string">&quot;gh-pages&quot;</span>: <span class="hljs-string">&quot;npm run doc-build &amp;&amp; gh-pages -d __site&quot;</span>
+  }
+}
+</code></pre>
+</li>
+<li><p>&#x63A8;&#x9001;&#x4EE3;&#x7801;&#x540E;&#x8FD0;&#x884C; <code>npm run gh-pages</code></p>
+</li>
+</ul>
+<p>&#x5728; <code>https://yourGroup.github.io/yourProject/</code> &#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x5728;&#x7EBF;&#x7684; Demo &#x5566;&#xFF01;</p>
+<p><a href="https://github.com/ant-tool/atool-doc" target="_blank">&#x4E86;&#x89E3;&#x66F4;&#x591A; atool-doc</a></p>
 
                     
                     </section>
@@ -331,8 +450,10 @@
         </div>
 
         
+        <a href="./atool-test.html" class="navigation navigation-prev " aria-label="Previous page: atool-test 基本使用"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./setup.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 环境准备"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="./faq.html" class="navigation navigation-next " aria-label="Next page: FAQ"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
