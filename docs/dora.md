@@ -27,7 +27,7 @@ $ dora --plugins webpack,livereload,jsonapi
 
 ## 用法
 
-下面以 [dora-plugin-atool-build](https://github.com/dora-js/dora-plugin-atool-build) 和 [dora-plugin-proxy](https://github.com/dora-js/dora-plugin-proxy) 为例，介绍 dora 及其插件的用法。
+下面以 [dora-plugin-webpack](https://github.com/dora-js/dora-plugin-webpack) 和 [dora-plugin-proxy](https://github.com/dora-js/dora-plugin-proxy) 为例，介绍 dora 及其插件的用法。
 
 ### 快速上手
 
@@ -50,31 +50,31 @@ $ open http://localhost:8000/package.json
 ### dora 命令举例
 
 ```bash
-## 载入 proxy, atool-build 和 hmr 插件
-$ dora --plugins proxy,atool-build,hmr
+## 载入 proxy, webpack 和 hmr 插件
+$ dora --plugins proxy,webpack,hmr
 
 ## 载入本地插件
 $ dora --plugins ./local-plugin
 
 ## 载入插件并附加参数
-$ dora --plugins atool-build?publicPath=/foo/&verbose
+$ dora --plugins webpack?publicPath=/foo/&verbose
 
 ## 载入插件，参数是 JSON 格式
-$ dora --plugins atool-build?{"publicPath":"/foo/","verbose":true}
+$ dora --plugins webpack?{"publicPath":"/foo/","verbose":true}
 ```
 
 ### 使用插件
 
-通过 dora-plugin-atool-build 插件实现 webpack 调试。
+通过 dora-plugin-webpack 插件实现 webpack 调试。
 
 ```bash
-$ npm i dora-plugin-atool-build -D
+$ npm i dora-plugin-webpack -D
 $ vi package.json
 
 + "entry": ["./index.js"]
 
 $ echo 'console.log(1);' > index.js
-$ ./node_modules/.bin/dora --plugins atool-build
+$ ./node_modules/.bin/dora --plugins webpack
 $ open http://localhost:8000/index.js
 ```
 
@@ -96,7 +96,7 @@ $ vi proxy.config.js
 +   'GET /api/users': { data: [1, 2] },
 + };
 
-$ ./node_modules/.bin/dora --plugins atool-build,proxy
+$ ./node_modules/.bin/dora --plugins webpack,proxy
 $ open http://localhost:8989/api/users
 ```
 
