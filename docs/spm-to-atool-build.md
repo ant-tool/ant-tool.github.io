@@ -86,7 +86,7 @@
   ```
   从此边可以在 对应的 脚本中 `require('path/to/html')`
   
-  - 如果想完成更加负责的功能，比如 `minify` or `html tpl` 则可以考虑使用其他社区更加强大的 `loader` 或者 `plugin` 。比如 [html-loader](https://www.npmjs.com/package/html-loader), [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin), `plugin` 使用可以参考如下 [添加一个plugin](https://github.com/ant-tool/atool-build/issues/32)
+  - 如果想完成更加复杂的功能，比如 `minify` or `html tpl` 则可以考虑使用其他社区更加强大的 `loader` 或者 `plugin` 。比如 [html-loader](https://www.npmjs.com/package/html-loader), [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin), `plugin` 使用可以参考如下 [添加一个plugin](https://github.com/ant-tool/atool-build/issues/32)
   
 ----
 
