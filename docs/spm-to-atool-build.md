@@ -277,14 +277,14 @@ module.exports = function(webpackConfig) {
 
 > [spm.base64](https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#base64)
 
-在 `atool-build` 中已经内置了对 `base64` 的支持, 更确切说是对 `data ulr`, 而完成该工作的正是 `webpack` 的 `url-loader`
+在 `atool-build` 中已经内置了对 `base64` 的支持, 更确切说是对 `data url`, 而完成该工作的正是 `webpack` 的 `url-loader`
 
 相关配置可以在源码中查看 [atool-build 中关于关于 url-loader 配置](https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js#L87)
 
-配置默认对 **10kb** 的文件都会做 `data ulr` 的处理。并且把相关文件路径提取到根路径，文件名 hash 化。
+配置默认对 **10kb** 的文件都会做 `data url` 的处理。并且把相关文件路径提取到根路径，文件名 hash 化。
 
 
-- 如何配置默认对 **20kb** 的图片文件都会做 `data ulr` 的处理？
+- 如何配置默认对 **20kb** 的图片文件都会做 `data url` 的处理？
   书写 `webpack.config.js` 覆盖 [atool-build 中处理图片的 loader 配置](https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js#L92)
   
   ```javascript
@@ -297,7 +297,7 @@ module.exports = function(webpackConfig) {
   });
   ```
 
-- 如何除去对图片文件的 `data ulr` 的处理？
+- 如何除去对图片文件的 `data url` 的处理？
   这边就牵扯到如何使用 `loader` 了。查看 `url-loader` 的文档，便可以看到如下说明
   > The url loader works like the file loader, but can return a Data Url if the file is smaller than a limit.
   > If the file is greater than the limit the **[file-loader](https://github.com/webpack/file-loader)** is used and all query parameters are passed to it.
@@ -305,7 +305,7 @@ module.exports = function(webpackConfig) {
   ```javascript
   webpackConfig.module.loaders.some(function(loader) {
     if (loader.loader === 'url?limit=10000') {
-      loader.loader = 'file'file?name=[name].[ext]
+      loader.loader = 'file?name=[name].[ext]'
 
       return true;
     }
