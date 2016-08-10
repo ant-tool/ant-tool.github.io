@@ -57,7 +57,7 @@
         data-chapter-title="spm to atool-build"
         data-filepath="spm-to-atool-build.md"
         data-basepath="."
-        data-revision="Wed Apr 27 2016 15:21:27 GMT+0800 (CST)"
+        data-revision="Wed Aug 10 2016 15:19:56 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -409,7 +409,7 @@
 </code></pre>
 <p>&#x4ECE;&#x6B64;&#x8FB9;&#x53EF;&#x4EE5;&#x5728; &#x5BF9;&#x5E94;&#x7684; &#x811A;&#x672C;&#x4E2D; <code>require(&apos;path/to/html&apos;)</code></p>
 </li>
-<li><p>&#x5982;&#x679C;&#x60F3;&#x5B8C;&#x6210;&#x66F4;&#x52A0;&#x8D1F;&#x8D23;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6BD4;&#x5982; <code>minify</code> or <code>html tpl</code> &#x5219;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x793E;&#x533A;&#x66F4;&#x52A0;&#x5F3A;&#x5927;&#x7684; <code>loader</code> &#x6216;&#x8005; <code>plugin</code> &#x3002;&#x6BD4;&#x5982; <a href="https://www.npmjs.com/package/html-loader" target="_blank">html-loader</a>, <a href="https://www.npmjs.com/package/html-webpack-plugin" target="_blank">html-webpack-plugin</a>, <code>plugin</code> &#x4F7F;&#x7528;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5982;&#x4E0B; <a href="https://github.com/ant-tool/atool-build/issues/32" target="_blank">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;plugin</a></p>
+<li><p>&#x5982;&#x679C;&#x60F3;&#x5B8C;&#x6210;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6BD4;&#x5982; <code>minify</code> or <code>html tpl</code> &#x5219;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x793E;&#x533A;&#x66F4;&#x52A0;&#x5F3A;&#x5927;&#x7684; <code>loader</code> &#x6216;&#x8005; <code>plugin</code> &#x3002;&#x6BD4;&#x5982; <a href="https://www.npmjs.com/package/html-loader" target="_blank">html-loader</a>, <a href="https://www.npmjs.com/package/html-webpack-plugin" target="_blank">html-webpack-plugin</a>, <code>plugin</code> &#x4F7F;&#x7528;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5982;&#x4E0B; <a href="https://github.com/ant-tool/atool-build/issues/32" target="_blank">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;plugin</a></p>
 </li>
 </ul>
 </li>
@@ -574,11 +574,11 @@
 <blockquote>
 <p><a href="https://github.com/spmjs/docs/blob/master/zh-cn/project/configuration.md#base64" target="_blank">spm.base64</a></p>
 </blockquote>
-<p>&#x5728; <code>atool-build</code> &#x4E2D;&#x5DF2;&#x7ECF;&#x5185;&#x7F6E;&#x4E86;&#x5BF9; <code>base64</code> &#x7684;&#x652F;&#x6301;, &#x66F4;&#x786E;&#x5207;&#x8BF4;&#x662F;&#x5BF9; <code>data ulr</code>, &#x800C;&#x5B8C;&#x6210;&#x8BE5;&#x5DE5;&#x4F5C;&#x7684;&#x6B63;&#x662F; <code>webpack</code> &#x7684; <code>url-loader</code></p>
+<p>&#x5728; <code>atool-build</code> &#x4E2D;&#x5DF2;&#x7ECF;&#x5185;&#x7F6E;&#x4E86;&#x5BF9; <code>base64</code> &#x7684;&#x652F;&#x6301;, &#x66F4;&#x786E;&#x5207;&#x8BF4;&#x662F;&#x5BF9; <code>data url</code>, &#x800C;&#x5B8C;&#x6210;&#x8BE5;&#x5DE5;&#x4F5C;&#x7684;&#x6B63;&#x662F; <code>webpack</code> &#x7684; <code>url-loader</code></p>
 <p>&#x76F8;&#x5173;&#x914D;&#x7F6E;&#x53EF;&#x4EE5;&#x5728;&#x6E90;&#x7801;&#x4E2D;&#x67E5;&#x770B; <a href="https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js#L87" target="_blank">atool-build &#x4E2D;&#x5173;&#x4E8E;&#x5173;&#x4E8E; url-loader &#x914D;&#x7F6E;</a></p>
-<p>&#x914D;&#x7F6E;&#x9ED8;&#x8BA4;&#x5BF9; <strong>10kb</strong> &#x7684;&#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x505A; <code>data ulr</code> &#x7684;&#x5904;&#x7406;&#x3002;&#x5E76;&#x4E14;&#x628A;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x63D0;&#x53D6;&#x5230;&#x6839;&#x8DEF;&#x5F84;&#xFF0C;&#x6587;&#x4EF6;&#x540D; hash &#x5316;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x9ED8;&#x8BA4;&#x5BF9; <strong>10kb</strong> &#x7684;&#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x505A; <code>data url</code> &#x7684;&#x5904;&#x7406;&#x3002;&#x5E76;&#x4E14;&#x628A;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x63D0;&#x53D6;&#x5230;&#x6839;&#x8DEF;&#x5F84;&#xFF0C;&#x6587;&#x4EF6;&#x540D; hash &#x5316;&#x3002;</p>
 <ul>
-<li><p>&#x5982;&#x4F55;&#x914D;&#x7F6E;&#x9ED8;&#x8BA4;&#x5BF9; <strong>20kb</strong> &#x7684;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x505A; <code>data ulr</code> &#x7684;&#x5904;&#x7406;&#xFF1F;
+<li><p>&#x5982;&#x4F55;&#x914D;&#x7F6E;&#x9ED8;&#x8BA4;&#x5BF9; <strong>20kb</strong> &#x7684;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x505A; <code>data url</code> &#x7684;&#x5904;&#x7406;&#xFF1F;
 &#x4E66;&#x5199; <code>webpack.config.js</code> &#x8986;&#x76D6; <a href="https://github.com/ant-tool/atool-build/blob/master/src/getWebpackCommonConfig.js#L92" target="_blank">atool-build &#x4E2D;&#x5904;&#x7406;&#x56FE;&#x7247;&#x7684; loader &#x914D;&#x7F6E;</a></p>
 <pre><code class="lang-javascript">webpackConfig.module.loaders.some(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">loader</span>) </span>{
   <span class="hljs-keyword">if</span> (loader.loader === <span class="hljs-string">&apos;url?limit=10000&apos;</span>) {
@@ -589,7 +589,7 @@
 });
 </code></pre>
 </li>
-<li><p>&#x5982;&#x4F55;&#x9664;&#x53BB;&#x5BF9;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x7684; <code>data ulr</code> &#x7684;&#x5904;&#x7406;&#xFF1F;
+<li><p>&#x5982;&#x4F55;&#x9664;&#x53BB;&#x5BF9;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x7684; <code>data url</code> &#x7684;&#x5904;&#x7406;&#xFF1F;
 &#x8FD9;&#x8FB9;&#x5C31;&#x7275;&#x626F;&#x5230;&#x5982;&#x4F55;&#x4F7F;&#x7528; <code>loader</code> &#x4E86;&#x3002;&#x67E5;&#x770B; <code>url-loader</code> &#x7684;&#x6587;&#x6863;&#xFF0C;&#x4FBF;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5982;&#x4E0B;&#x8BF4;&#x660E;</p>
 <blockquote>
 <p>The url loader works like the file loader, but can return a Data Url if the file is smaller than a limit.
@@ -597,7 +597,7 @@ If the file is greater than the limit the <strong><a href="https://github.com/we
 </blockquote>
 <pre><code class="lang-javascript">webpackConfig.module.loaders.some(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">loader</span>) </span>{
   <span class="hljs-keyword">if</span> (loader.loader === <span class="hljs-string">&apos;url?limit=10000&apos;</span>) {
-    loader.loader = <span class="hljs-string">&apos;file&apos;</span>file?name=[name].[ext]
+    loader.loader = <span class="hljs-string">&apos;file?name=[name].[ext]&apos;</span>
 
     <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
   }

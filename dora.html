@@ -57,7 +57,7 @@
         data-chapter-title="dora 详解"
         data-filepath="dora.md"
         data-basepath="."
-        data-revision="Wed Apr 27 2016 15:21:27 GMT+0800 (CST)"
+        data-revision="Wed Aug 10 2016 15:19:56 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -352,7 +352,7 @@
 <pre><code class="lang-bash">$ dora --plugins webpack,livereload,jsonapi
 </code></pre>
 <h2 id="&#x7528;&#x6CD5;">&#x7528;&#x6CD5;</h2>
-<p>&#x4E0B;&#x9762;&#x4EE5; <a href="https://github.com/dora-js/dora-plugin-atool-build" target="_blank">dora-plugin-atool-build</a> &#x548C; <a href="https://github.com/dora-js/dora-plugin-proxy" target="_blank">dora-plugin-proxy</a> &#x4E3A;&#x4F8B;&#xFF0C;&#x4ECB;&#x7ECD; dora &#x53CA;&#x5176;&#x63D2;&#x4EF6;&#x7684;&#x7528;&#x6CD5;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x4EE5; <a href="https://github.com/dora-js/dora-plugin-webpack" target="_blank">dora-plugin-webpack</a> &#x548C; <a href="https://github.com/dora-js/dora-plugin-proxy" target="_blank">dora-plugin-proxy</a> &#x4E3A;&#x4F8B;&#xFF0C;&#x4ECB;&#x7ECD; dora &#x53CA;&#x5176;&#x63D2;&#x4EF6;&#x7684;&#x7528;&#x6CD5;&#x3002;</p>
 <h3 id="&#x5FEB;&#x901F;&#x4E0A;&#x624B;">&#x5FEB;&#x901F;&#x4E0A;&#x624B;</h3>
 <p>&#x63A8;&#x8350;&#x628A; dora &#x4F5C;&#x4E3A;&#x9879;&#x76EE;&#x4F9D;&#x8D56;&#x6765;&#x4F7F;&#x7528;&#x3002;</p>
 <pre><code class="lang-bash">$ mkdir dora-demo &amp;&amp; <span class="hljs-built_in">cd</span> dora-demo
@@ -367,27 +367,27 @@ $ open http://localhost:<span class="hljs-number">8000</span>/package.json
 
 
 <h3 id="dora-&#x547D;&#x4EE4;&#x4E3E;&#x4F8B;">dora &#x547D;&#x4EE4;&#x4E3E;&#x4F8B;</h3>
-<pre><code class="lang-bash"><span class="hljs-comment">## &#x8F7D;&#x5165; proxy, atool-build &#x548C; hmr &#x63D2;&#x4EF6;</span>
-$ dora --plugins proxy,atool-build,hmr
+<pre><code class="lang-bash"><span class="hljs-comment">## &#x8F7D;&#x5165; proxy, webpack &#x548C; hmr &#x63D2;&#x4EF6;</span>
+$ dora --plugins proxy,webpack,hmr
 
 <span class="hljs-comment">## &#x8F7D;&#x5165;&#x672C;&#x5730;&#x63D2;&#x4EF6;</span>
 $ dora --plugins ./<span class="hljs-built_in">local</span>-plugin
 
 <span class="hljs-comment">## &#x8F7D;&#x5165;&#x63D2;&#x4EF6;&#x5E76;&#x9644;&#x52A0;&#x53C2;&#x6570;</span>
-$ dora --plugins atool-build?publicPath=/foo/&amp;verbose
+$ dora --plugins webpack?publicPath=/foo/&amp;verbose
 
 <span class="hljs-comment">## &#x8F7D;&#x5165;&#x63D2;&#x4EF6;&#xFF0C;&#x53C2;&#x6570;&#x662F; JSON &#x683C;&#x5F0F;</span>
-$ dora --plugins atool-build?{<span class="hljs-string">&quot;publicPath&quot;</span>:<span class="hljs-string">&quot;/foo/&quot;</span>,<span class="hljs-string">&quot;verbose&quot;</span>:<span class="hljs-literal">true</span>}
+$ dora --plugins webpack?{<span class="hljs-string">&quot;publicPath&quot;</span>:<span class="hljs-string">&quot;/foo/&quot;</span>,<span class="hljs-string">&quot;verbose&quot;</span>:<span class="hljs-literal">true</span>}
 </code></pre>
 <h3 id="&#x4F7F;&#x7528;&#x63D2;&#x4EF6;">&#x4F7F;&#x7528;&#x63D2;&#x4EF6;</h3>
-<p>&#x901A;&#x8FC7; dora-plugin-atool-build &#x63D2;&#x4EF6;&#x5B9E;&#x73B0; webpack &#x8C03;&#x8BD5;&#x3002;</p>
-<pre><code class="lang-bash">$ npm i dora-plugin-atool-build -D
+<p>&#x901A;&#x8FC7; dora-plugin-webpack &#x63D2;&#x4EF6;&#x5B9E;&#x73B0; webpack &#x8C03;&#x8BD5;&#x3002;</p>
+<pre><code class="lang-bash">$ npm i dora-plugin-webpack -D
 $ vi package.json
 
 + <span class="hljs-string">&quot;entry&quot;</span>: [<span class="hljs-string">&quot;./index.js&quot;</span>]
 
 $ <span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;console.log(1);&apos;</span> &gt; index.js
-$ ./node_modules/.bin/dora --plugins atool-build
+$ ./node_modules/.bin/dora --plugins webpack
 $ open http://localhost:<span class="hljs-number">8000</span>/index.js
 </code></pre>
   <video id="my-video" class="video-js" controls preload="auto" style="width:654px;height:256px">
@@ -404,7 +404,7 @@ $ vi proxy.config.js
 +   <span class="hljs-string">&apos;GET /api/users&apos;</span>: { data: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>] },
 + };
 
-$ ./node_modules/.bin/dora --plugins atool-build,proxy
+$ ./node_modules/.bin/dora --plugins webpack,proxy
 $ open http://localhost:<span class="hljs-number">8989</span>/api/users
 </code></pre>
 <blockquote>
