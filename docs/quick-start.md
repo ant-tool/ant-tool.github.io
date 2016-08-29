@@ -58,10 +58,10 @@ $ antd-init
 
 ### 调试
 
-在项目目录执行 `npm run dev`。
+在项目目录执行 `npm start`。
 
 ```bash
-$ npm run dev
+$ npm start
 
 > antd-demo@1.0.0 dev /private/tmp/blog
 > dora -p 8001 --plugins atool-build,proxy,hmr
@@ -87,7 +87,7 @@ webpack: bundle build is now finished.
 
 ### 构建
 
-理论上，本地只需通过 `npm run dev` 进行调试即可，无需构建。而实际上，你可能需要观察构建出来的文件是否符合预期。
+理论上，本地只需通过 `npm start` 进行调试即可，无需构建。而实际上，你可能需要观察构建出来的文件是否符合预期。
 
 在项目根目录执行。
 
