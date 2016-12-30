@@ -25,7 +25,7 @@ atool-build 要求 package.json 文件里面增加 `entry` 字段。
 $ atool-build
 ````
 
-执行完成后，会在项目根目录的 `dist` 目录里生成 `index.js`, `antoher.js`, `index.css`, `another.css` 以及 `common.js` 和 `common.css` 文件。其中，`common.js` 和 `common.css` 文件是多个入口 entry 公用的模块；其它文件是由 entry 的名称决定的最终打包文件。
+执行完成后，会在项目根目录的 `dist` 目录里生成 `index.js`, `another.js`, `index.css`, `another.css` 以及 `common.js` 和 `common.css` 文件。其中，`common.js` 和 `common.css` 文件是多个入口 entry 公用的模块；其它文件是由 entry 的名称决定的最终打包文件。
 
 
 ## 参数
